@@ -79,9 +79,7 @@ def add_post():
 def change_post(post_id):
     title = request.json["title"]
     body = request.json["body"]
-    id = request.json["userId"]
-    if not post_id.isnumeric() or not type(id)==int:
-        return f"'{post_id}' or '{id}' is not valid number"
+
     post = db.session.query(Post).filter(Post.id==int(post_id)).all()
     if post==[]:
         return f"post with id {post_id} not found"
