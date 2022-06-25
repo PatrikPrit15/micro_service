@@ -31,8 +31,10 @@
 
 
 Dáta je treba poslať ako json (v prípade že by python robil problémy môže pomôcť to ak sa kľúče dajú do uvodzoviek)
+```
 {
     userId:1,
     title:"toto je title",
     body:"toto je body"
 }
+```
