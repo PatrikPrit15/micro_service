@@ -14,8 +14,8 @@
 # endpoints
 
   ## users
-  1. /users/post/<userId>/ GET
-     vrati vsetky posty od uzivatela s id userId
+  1. /users/post/<user_id>/ GET
+     vrati vsetky posty od uzivatela s id user_id
 
   ## posts
   1. /posts/<post_id>/ GET
@@ -28,3 +28,11 @@
      zmeni prispevok na post_id na novy v db
   4. /posts/<post_id>/ DELETE
      vymaze prispevok z db
+
+
+Dáta je treba poslať ako json (v prípade že by python robil problémy môže pomôcť to ak sa kľúče dajú do uvodzoviek)
+{
+    userId:1,
+    title:"toto je title",
+    body:"toto je body"
+}
